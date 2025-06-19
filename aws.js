@@ -26,7 +26,6 @@ app.post('/generate-presigned-url', async (req, res) => {
     Key: fileName,
     Expires: 300, // URL berlaku 1 menit
     ContentType: fileType,
-    ACL: 'public-read', // supaya langsung bisa diakses CDN
   };
 
   try {
